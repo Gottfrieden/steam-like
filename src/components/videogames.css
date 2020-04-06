@@ -9,13 +9,15 @@
     border-left:2px solid #0f1a23
 
 }
-.videogame-banner.age-of-empire-ii-definitive-edition {
+.videogame-banner {
     height:300px;
-    background-image:url(https://cdn-media.rtl.fr/cache/BhXrUMZnrWsP7xDe1WKuPA/880v587-0/online/image/2019/0821/7798207784_age-of-empire-ii-definitive-edition.JPG);
     background-position:center;
     background-size:cover;
     background-repeat:repeat;
     position:relative;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: -20px;
 }
 .videogame-banner h2 {
     position:absolute;
@@ -24,3 +26,108 @@
     color:#efefef;
     text-shadow:0 0 5px black
 }   
+.game-play-stats-container {
+    height:50px;
+    width:calc(100%);
+    margin-left:-20px;
+    border-top:2px solid rgba(239, 239, 239, 0.4);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:5px 20px 0 20px;
+}
+.game-play-stats-container a {
+    text-decoration:none;
+}
+.video-game-content {
+    width:100%;
+    height:100vh;
+    position:relative;
+    z-index:999;
+}
+.play-game, .two-lines-content {
+    position: relative;
+    z-index: 9999;
+}
+.video-game-content-background {
+    position:absolute;
+    top:0;
+    left:0;
+    filter:blur(2.5rem);
+    width:100%;
+    height:100%;
+    z-index:99;
+}   
+.two-lines-content h3, .two-lines-content p {
+    margin-block-end:0px;
+    margin-block-start:0px;
+    color:rgba(239, 239, 239, 0.5);
+}
+.two-lines-content h3 {
+    font-size:15px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+}
+.two-lines-content p {
+    font-size:12px;
+}
+.play-game {
+    background-image:linear-gradient( to bottom, rgba(121,153,5,0.8) 5%, rgba(83,105,4,0.8) 95%);
+    background-color:rgb(156, 172, 97);
+    color:white;
+    text-transform:uppercase;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    text-decoration:none;
+    transition:all 0.2s ease-in-out;
+}
+.play-game:hover {
+    background-color:#D2E885;
+}
+.play-icon {
+    width:20px;
+    height:20px;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:url(../images/play.png);
+    display:block;
+    margin: 0 10px 0 0px;
+}
+.game-icon-container {
+    width:120px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    z-index:999;
+}
+.game-icon {
+    width:30px;
+    height:30px;
+    border-radius:5px;
+    background-color:rgba(239, 239, 239, 0.2);
+    margin:0 5px 0 5px;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    opacity:0.6;
+    transition:all 0.2s ease-in-out;
+}
+.game-icon:hover {
+    opacity:1;
+}
+.game-icon.settings {
+    background-image:url(../images/settings-icon.png);
+}
+.game-icon.information {
+    background-image:url(../images/information.png);
+}
+.game-icon.favorite {
+    background-image:url(../images/favorite.png);
+}

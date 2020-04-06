@@ -8,14 +8,16 @@ const videoGames = [
         name: 'Spiral Knights',
         link: 'spiral-knights',
         windows: true,
-        mac: true
+        mac: true,
+        installed:false
     },
     {
         icon: 'url(https://steamuserimages-a.akamaihd.net/ugc/860612455486950246/A1754BD654E7AF9A5B867BC031AF0D155B7DB76C/)',
         banner:'linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(https://image.jeuxvideo.com/medias-md/157683/1576825228-1639-card.jpg)',
         name: 'Age of Empires II: Definitive Edition',
         link: 'age-of-empire-ii-definitive-edition',  
-        windows :true
+        windows :true,
+        installed:true
     },
     {
         icon:'url(https://lh5.ggpht.com/A2tnYb18vL2QCbdCA0n4ktYxOsUUf6mtiF7RCFYW8aNE2dmbI6SL57t6KFr7A3StR6E=w300)',
@@ -24,7 +26,8 @@ const videoGames = [
         link:'the-binding-of-isaac-rebirth',
         active: true,
         windows: true,
-        mac: true
+        mac: true,
+        installed:true
     },
     {
         icon:'url(https://images-eu.ssl-images-amazon.com/images/I/61-3e-uL7VL.png)',
@@ -32,7 +35,8 @@ const videoGames = [
         name:'Hollow Knight',
         link:'hollow-knight',
         windows: true,
-        mac: true
+        mac: true,
+        installed:true
     },
     {
         icon:'url(https://steamcdn-a.akamaihd.net/steam/apps/653530/capsule_616x353.jpg?t=1560608077)',
@@ -40,7 +44,8 @@ const videoGames = [
         name:'Return of the Obra Dinn',
         link:'return-of-the-obra-dinn',
         windows: true,
-        mac: true
+        mac: true,
+        installed:true
     },
     {
         icon:'url(https://b.thumbs.redditmedia.com/amAIbUWu332-u03vktDnwKH1BkJbYVuP8q3OtNZrTPM.png)',
@@ -48,7 +53,8 @@ const videoGames = [
         name:'Realm Grinder',
         link:'realm-grinder',
         windows: true,
-        mac: true
+        mac: true,
+        installed:false
     },
     {
         icon:'url(https://i0.wp.com/mac-torrent-download.net/wp-content/uploads/2020/03/Borderlands-3-icon.png?fit=246%2C246&ssl=1)',
@@ -56,14 +62,16 @@ const videoGames = [
         name:'Borderlands 3',
         link:'borderlands-3',
         windows: true,
-        mac: true
+        mac: true,
+        installed:false
     },
     {
         icon:'url(https://miro.medium.com/max/1080/1*LteTIiHyftNwRfY5b4OPMQ.png)',
         banner:'linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(https://cdn2.nextinpact.com/images/bd/wide-linked-media/16444.jpg)',
         name:'Destiny 2',
         link:'destiny-2',
-        windows: true
+        windows: true,
+        installed:true
     },
     {
         icon:'url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/46b63d3c-ae67-464c-9a37-670829b2a157/d6r6i19-7abfad81-e58a-4603-94f6-2b89f1dda221.png/v1/fill/w_256,h_256,strp/the_stanley_parable___icon_by_blagoicons_d6r6i19-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjU2IiwicGF0aCI6IlwvZlwvNDZiNjNkM2MtYWU2Ny00NjRjLTlhMzctNjcwODI5YjJhMTU3XC9kNnI2aTE5LTdhYmZhZDgxLWU1OGEtNDYwMy05NGY2LTJiODlmMWRkYTIyMS5wbmciLCJ3aWR0aCI6Ijw9MjU2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lGOZeJEmAjQHGChV6WJk2vTBQLVbsTB8STv9qcl0g10)',
@@ -71,21 +79,24 @@ const videoGames = [
         name:'The Stanley Parable',
         link:'the-stanley-parable',
         windows: true,
-        mac: true
+        mac: true,
+        installed:false
     },
     {
         icon:'url(http://getdrawings.com/free-icon/tekken-7-icon-52.png)',
         banner:'linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(https://store-images.s-microsoft.com/image/apps.247.66354120331917142.8b99bed0-9862-4f95-8a11-3db3d1b2d09c.57955b35-01fb-45da-9c8e-e4a7642d7663?mode=scale&q=90&h=1080&w=1920&format=jpg)',
         name:'TEKKEN 7',
         link:'tekken-7',
-        windows: true
+        windows: true,
+        installed:true
     },
     {
         icon:'url(https://www.customscenerydepot.com/downloads/3/1_24_12_16_3_36_50_0.png)',
         banner:'linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(https://steamcdn-a.akamaihd.net/steam/apps/2700/0000002706.1920x1080.jpg?t=1485262035)',
         name:'RollerCoaster Tycoon 3: Platinium!',
         link:'roller-coaster-tycoon-3-platinium',
-        windows: true
+        windows: true,
+        installed:true
     },
 ]
 
@@ -93,11 +104,37 @@ function ProductPage(props) {
         const params = props.match.params; 
         return (
             <div className="app-browser">
-            {videoGames.map(videoGame => (
-                <div className={"videogame-banner " + videoGame.link}>
-                    <h2>{videoGame.name}</h2>
+                {videoGames.filter(videoGame => videoGame.link === params.videoGameName).map(videoGame => (
+                <div className="product-content">
+                    <div className={"videogame-banner " + videoGame.link} style={{backgroundImage: videoGame.banner}}>
+                        <h2>{videoGame.name}</h2>
+                    </div>
+                    <div className="video-game-content">
+                        <div className="video-game-content-background" style={{backgroundImage: videoGame.banner}}></div>
+                        <div className="game-play-stats-container">
+                            <a href="#"><button className="play-game"><span className="play-icon"></span>Jouer</button></a>
+                            <div className="two-lines-content">
+                                <h3>Dernière utilisation</h3>
+                                <p>29 Juillet 2015</p>
+                            </div>
+                            <div className="two-lines-content">
+                                <h3>Temps de jeu</h3>
+                                <p>2 minutes</p>
+                            </div>
+                            <div className="two-lines-content">
+                                <h3>Succès</h3>
+                                <p>41/138</p>
+                            </div>
+                            <div className="game-icon-container">
+                                <div className="game-icon settings"></div>
+                                <div className="game-icon information"></div>
+                                <div className="game-icon favorite"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            )).filter(videoGame => videoGame.link === params.videoGameName)}
+                
+                ))}
             </div>
     )
 }

@@ -112,7 +112,7 @@ function App() {
         <Route exact path="/" component={Home}>
           <Home />
         </Route>
-        <Route exact path="/:videoGameName" components={ProductPage} />
+        <Route exact path="/:videoGameName" component={ProductPage} />
       </Switch>
     </Router>
   );
