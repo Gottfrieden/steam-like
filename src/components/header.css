@@ -1,0 +1,287 @@
+body {
+    font-family:Arial;
+}
+.visible {
+    display:block;
+}
+.main-header-element .submenu-container ul.submenu, .submenu {
+    display:none;
+}
+
+/* TOP NAVBAR */
+.top-nav {
+    width:100%;
+    height:40px;
+    display:flex;
+    background-color:#1b2838;
+    font-size:11px;
+    color:#efefef;
+    display:flex;
+    align-items:center;
+}
+.top-nav a {
+    color:#efefef;
+    text-decoration:none;
+    opacity:0.5;
+    font-weight:lighter;
+    cursor:default;
+}
+.top-nav a:hover {
+    opacity:1;
+}
+.top-left-nav {
+    display:flex;
+    justify-content:flex-start;
+    width:100%;
+}
+.top-right-nav {
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.top-left-nav ul {
+    display:inline-block;
+    padding-inline-start: 0px;
+}
+.top-left-nav ul li {
+    display:inline;
+    margin:0 10px 0 10px;
+}
+.top-right-nav-element {
+    background-color:rgba(42, 71, 94, 0.1);
+    margin:0 5px 0 5px;
+    width:35px;
+    height:25px;
+}
+.top-right-nav-element.community {
+    width:25px;
+    height:25px;
+}
+.top-right-nav-element.mail {
+    width:25px;
+    height:25px;
+}
+.top-right-nav-element.user {
+    width:120px;
+    height:25px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+    cursor:default;
+}
+.top-right-nav-element.user .user-picture {
+    width:25px;
+    height:31px;
+    background-image:url(https://img.redbull.com/images/c_fill,g_auto,w_1500,h_1000/q_auto,f_auto/redbullcom/2017/07/13/f35f87b7-93ee-4d30-935a-dbfdb77d22cd/hollow-knight-switch.jpg.jpg);
+    background-position:center;
+    background-size:210%;
+    background-repeat:no-repeat;
+}
+.top-right-nav-element.user .user-name {
+    color:#66c0f4;
+    line-height:25px;
+    width:115px;
+    height:25px;
+    position:relative;
+    background-color:rgba(42, 71, 94, 0.1);
+    padding-left:15px;
+}
+.top-right-nav-element.user .user-name:hover {
+    background-color:rgba(42, 71, 94, 0.5);
+}
+.top-right-nav-element.user .user-name::before {
+    content:'';
+    height:25px;
+    width:2px;
+    left:0;
+    right:0;
+    position:absolute;
+    background-color:#66c0f4;   
+}
+.dropdown-arrow {
+    position:absolute;
+    right:5px;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dropdown-arrow::before {
+    content:'';
+    width:2px;
+    height:5px;
+    background-color:#66c0f4;
+    position:absolute;
+    right:5px;
+    top:50%;
+    transform:rotate(-45deg) translateY(-50%);
+}
+.dropdown-arrow::after {
+    content:'';
+    width:2px;
+    height:5px;
+    background-color:#66c0f4;
+    position:absolute;
+    right:5px;
+    top:50%;
+    transform:rotate(45deg) translateY(-50%);
+}
+.top-right-nav-element:hover {
+    background-color:rgba(42, 71, 94, 0.4);
+}
+.top-right-nav-element.reduce {
+    position:relative;
+    background-color:transparent;
+}
+.top-right-nav-element.reduce::before {
+    content:'';
+    position:absolute;
+    bottom:5px;
+    left:50%;
+    transform:translateX(-50%);
+    height:1px;
+    border:0.5px solid #a1a1a1;
+    width:8px;
+    background-color:#a1a1a1;
+}
+.top-right-nav-element.reduce:hover::before {
+    box-shadow:0 0 3px white;
+    border:0.5px solid white;;
+}
+.top-right-nav-element.resize-screen {
+    border:1.2px solid #a1a1a1;
+    width:10px;
+    height:8px;
+    margin-top:8px;
+    position:relative;
+    background-color:transparent;
+}
+.top-right-nav-element.resize-screen::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:10px;
+    background-color:#a1a1a1;
+    height:1px;
+}
+.top-right-nav-element.mail {
+    background-image:url(../images/mail-icon.png);
+    background-size:45%;
+    background-repeat:no-repeat;
+    background-position:center;
+    opacity:0.7;
+    cursor:pointer;
+}
+.top-right-nav-element.community {
+    background-image:url(../images/community-icon.png);
+    background-size:45%;
+    background-repeat:no-repeat;
+    background-position:center;
+    opacity:0.7;
+    cursor:pointer;
+}
+.top-right-nav-element.fullscreen {
+    background-image:url(../images/full-screen-icon.png);
+    background-size:45%;
+    background-repeat:no-repeat;
+    background-position:center;
+    opacity:0.7;
+    cursor:pointer;
+}
+.top-right-nav-element.resize-screen:hover {
+    box-shadow:0 0 3px white;
+    border:1.2px solid white;
+}
+.top-right-nav-element.resize-screen:hover::before {
+    background-color:white;
+}
+.top-right-nav-element.close {
+    position:relative;
+    background-color:transparent;
+
+}
+.top-right-nav-element.close::before {
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%) rotate(45deg);
+    content:'';
+    background-color:#a1a1a1;
+    width:2px;
+    height:12px;
+}
+.top-right-nav-element.close::after {
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%) rotate(-45deg);
+    content:'';
+    background-color:#a1a1a1;
+    width:2px;
+    height:12px;
+}
+.top-right-nav-element.close:hover::before, .top-right-nav-element.close:hover::after {
+    background-color:white;
+    box-shadow:0 0 3px white;
+}
+/*.top-nav-container {
+    position:sticky;
+    top:0;
+    z-index:9999;
+}*/
+
+/* MAIN HEADER */
+.main-header {
+    background-color:#1b2838;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*position:sticky;
+    top:40px;
+    z-index:9999;*/
+}
+.main-header ul {
+    display:inline-block;
+    padding-inline-start: 0px;
+}
+.main-header ul li {
+    display:inline;
+}
+.main-header ul a {
+    text-decoration:none;
+    color:white;
+    opacity:0.8;
+    text-transform:uppercase;
+    font-size:20px;
+    cursor:default;
+}
+.main-header ul a:hover {
+    opacity:1;
+    text-shadow:0 0 3px white;
+}
+.main-header ul a.active {
+    opacity:1;
+    text-shadow:0 0 3px white;
+}
+.main-header-element {
+    margin:0 10px 0 10px;
+}
+.main-header ul li span.arrow {
+    width:20px;
+    height:18px;
+    display:inline-block;
+}
+.arrow.left-arrow {
+    background-image:url(../images/arrow-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform:rotate(180deg);
+}
+.arrow.right-arrow {
+    background-image:url(../images/arrow-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

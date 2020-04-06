@@ -1,0 +1,26 @@
+.app-browser {
+    width:66%;
+    min-width:calc(100% - 322px);
+    height:calc(100vh - 40px);
+    background-color:#2a475e;
+    position: absolute;
+    left: 280px;
+    top: 95px;
+    border-left:2px solid #0f1a23
+
+}
+.videogame-banner.age-of-empire-ii-definitive-edition {
+    height:300px;
+    background-image:url(https://cdn-media.rtl.fr/cache/BhXrUMZnrWsP7xDe1WKuPA/880v587-0/online/image/2019/0821/7798207784_age-of-empire-ii-definitive-edition.JPG);
+    background-position:center;
+    background-size:cover;
+    background-repeat:repeat;
+    position:relative;
+}
+.videogame-banner h2 {
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    color:#efefef;
+    text-shadow:0 0 5px black
+}   

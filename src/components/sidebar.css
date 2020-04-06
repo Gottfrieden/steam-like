@@ -1,0 +1,130 @@
+.sidebar {
+    background-color:rgb(27, 40, 56);
+    width:280px;
+    height:calc(100vh - 95px);
+    position:relative;
+}
+.video-game-list {
+    overflow-y:auto;
+}
+.sidebar section {
+    padding-left:30px;
+}
+.sidebar section.display-all {
+    background-image:linear-gradient(to right, rgba(61, 61, 61, 0.2), rgba(0, 0, 0, 0));
+    display:flex;
+    justify-content:left;
+    align-items:center;
+    height:25px;
+    cursor:pointer;
+}
+.sidebar section.display-all:hover {
+    background-image:linear-gradient(rgba(239, 239, 239, 0.1), rgba(239, 239, 239, 0.1))
+}
+.sidebar h4 {
+    text-transform:uppercase;
+    position:relative;
+    margin:0px;
+    color:rgba(239, 239, 239, 0.8);
+    font-size:12px;
+}
+.dark-text {
+    color:rgba(239, 239, 239, 0.2);
+    font-weight:bold;
+}
+.sidebar h4::before {
+    content:'';
+    width:10px;
+    height:2px;
+    background-color:rgba(239, 239, 239, 0.5);
+    position:absolute;
+    left:-20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+.sidebar ul {
+    display:inline-block;
+    padding-inline-start:0px;
+    margin-block-start:0px;
+}
+.sidebar ul li {
+    display:inline-block;
+    width:100%;
+    margin-left:-30px;
+    padding-left:30px;
+}
+.sidebar ul a {
+    text-decoration:none;
+    color:rgba(239, 239, 2398, 0.5);
+    cursor:default;
+}
+.video-games-list ul li a.active {
+    color:#efefef;
+}
+.sidebar .video-games-list li.video-game-line, .sidebar .video-games-list a  {
+    cursor:pointer;
+}
+.vg-list-icon {
+    width:20px;
+    height:20px;
+    margin-right:10px;
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:black;
+    margin-top:-1px;
+}
+.video-game-line:hover {
+    background-color:rgba(239, 239, 239, 0.1);
+}
+.video-game-line a {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:left;
+    height:25px;
+    width:100%
+}
+.video-game-line a h5 {
+    font-weight:lighter;
+}
+.sidebar-home {
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10px 0 10px;
+    margin-bottom:10px;
+}
+.sidebar-home .sidebar-home-button {
+    color:rgba(239, 239, 239, 0.5);
+    text-decoration:none;
+    font-size:13px;
+    padding:8px;
+    width:80%;
+    box-shadow:0 0 5px rgba(23, 23, 23, 1);
+    border-radius:2px;
+}
+.sidebar-home .grid-display {
+    width:31px;
+    height:31px;
+    box-shadow:0 0 5px rgba(23, 23, 23, 1);
+    border-radius:2px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.sidebar-home-button:hover, .grid-display:hover {
+    background-color:rgba(239, 239, 239, 0.2);
+    color:#efefef;
+}
+.grid-display .grey-bloc-grid-display {
+    width:10px;
+    height:10px;
+    margin:1px;
+    background-color:rgba(239, 239, 239, 0.1);
+}
+.grid-display:hover .grey-bloc-grid-display {
+    background-color:#efefef;
+}
